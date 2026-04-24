@@ -21,11 +21,11 @@ Built as part of the ServiceHive × Inflx Machine Learning Internship Assignment
 
 | Component | Technology |
 |-----------|-----------|
-| LLM | Claude Haiku (`claude-haiku-4-5`) |
+| LLM | Groq (`Llama 3`) |
 | Agent Framework | LangGraph (StateGraph) |
 | RAG | Local Markdown + System Prompt Injection |
 | Language | Python 3.9+ |
-| API | Anthropic Claude API |
+| API | Groq API |
 
 ---
 
@@ -33,13 +33,13 @@ Built as part of the ServiceHive × Inflx Machine Learning Internship Assignment
 
 ### Prerequisites
 - Python 3.9+
-- Anthropic API key → [Get here](https://console.anthropic.com)
+- Groq API key → [Get here](https://console.groq.com)
 
 ### Setup
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/autostream-agent
+git clone https://github.com/soaebhasan12/autostream-agent
 cd autostream-agent
 
 # 2. Create virtual environment
@@ -55,7 +55,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # 4. Create .env file with your API key
-echo "ANTHROPIC_API_KEY=your_key_here" > .env
+echo "GROQ_API_KEY=your_key_here" > .env
 
 # 5. Run the agent
 python main.py
@@ -188,4 +188,4 @@ autostream-agent/
 
 ---
 
-*Built with ❤️ using Anthropic Claude + LangGraph*
+*Built with ❤️*
