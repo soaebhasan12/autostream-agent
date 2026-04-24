@@ -1,0 +1,6 @@
+# Secret files - GitHub pe mat jaao!
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
