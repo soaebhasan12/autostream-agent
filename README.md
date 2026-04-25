@@ -1,23 +1,25 @@
-# AutoStream AI Sales Agent 🎬
+# AutoStream AI Sales Agent
 
 > A conversational AI agent that handles product queries, detects high-intent users,
 > and captures leads — built with **LangGraph + Claude Haiku + RAG**.
 
 Built as part of the ServiceHive × Inflx Machine Learning Internship Assignment.
 
----
 
-## ✨ Features
-
-- 🧠 **Intent Detection** — Classifies user messages (Greeting / Product Inquiry / High Intent)
-- 📚 **RAG Pipeline** — Answers questions from a local knowledge base (no hallucinations)
-- 🎯 **Lead Capture** — Collects name, email, platform when user shows buying intent
-- 💾 **State Management** — Remembers full conversation context across 5–6 turns
-- 🔒 **Safe Tool Calling** — Lead capture only triggers after all 3 details collected
 
 ---
 
-## 🏗️ Tech Stack
+##  Features
+
+- **Intent Detection** — Classifies user messages (Greeting / Product Inquiry / High Intent)
+-  **RAG Pipeline** — Answers questions from a local knowledge base (no hallucinations)
+-  **Lead Capture** — Collects name, email, platform when user shows buying intent
+-  **State Management** — Remembers full conversation context across 5–6 turns
+-  **Safe Tool Calling** — Lead capture only triggers after all 3 details collected
+
+---
+
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -29,7 +31,7 @@ Built as part of the ServiceHive × Inflx Machine Learning Internship Assignment
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### Prerequisites
 - Python 3.9+
@@ -63,29 +65,29 @@ python main.py
 
 ### Sample Conversation
 ```
-👤 You: Hi there!
-🤖 Hi! Welcome to AutoStream! Ask me about pricing or features.
+You: Hi there!
+ Hi! Welcome to AutoStream! Ask me about pricing or features.
 
-👤 You: What's included in the Pro plan?
-🤖 The Pro Plan ($79/month) includes unlimited 4K videos, AI captions,
+You: What's included in the Pro plan?
+ The Pro Plan ($79/month) includes unlimited 4K videos, AI captions,
    24/7 support, and custom branding...
 
-👤 You: That's perfect! I want to sign up for my YouTube channel
-🤖 Exciting! May I know your name first?
+You: That's perfect! I want to sign up for my YouTube channel
+ Exciting! May I know your name first?
 
-👤 You: Rahul Sharma
-🤖 Nice to meet you, Rahul! What's your email address?
+You: Rahul Sharma
+ Nice to meet you, Rahul! What's your email address?
 
-👤 You: rahul@gmail.com
-🤖 Got it! Which platform do you mainly create on?
+You: rahul@gmail.com
+ Got it! Which platform do you mainly create on?
 
-👤 You: YouTube
-🤖 🎉 You're all set, Rahul! [LEAD CAPTURED in terminal]
+You: YouTube
+ You're all set, Rahul! [LEAD CAPTURED in terminal]
 ```
 
 ---
 
-## 🏛️ Architecture (~200 words)
+## Architecture (~200 words)
 
 ### Why LangGraph?
 
@@ -159,7 +161,7 @@ def webhook():
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 autostream-agent/
@@ -177,7 +179,7 @@ autostream-agent/
 
 ---
 
-## 📊 Evaluation Criteria Checklist
+## Evaluation Criteria Checklist
 
 - [x] Agent reasoning & intent detection (LLM-based classification)
 - [x] Correct use of RAG (knowledge base → system prompt injection)
